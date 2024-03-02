@@ -8,7 +8,7 @@ from rabbitmq.queue import Queue
 class DirectConsumerAppchatDlq(Consumer):
     """
     This consumer is responsible for reading redirected messages because the TTL (time-to-live) has been exceeded.
-    In this case, the specific treatment for the messages can be applied.
+    In this case, a specific treatment for the messages can be applied, such as: redirect to the original queue or anything rule.
     """
 
     def callback(self, channel, method, properties, body) -> None:
