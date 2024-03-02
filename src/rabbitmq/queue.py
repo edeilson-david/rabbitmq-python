@@ -26,5 +26,6 @@ class Queue(object):
 
     """
 
-    def __init__(self, name: str) -> None:
+    def __init__(self, name: str, args: dict = None) -> None:
         self.name: str = name
+        self.args: dict = args
