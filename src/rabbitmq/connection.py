@@ -9,7 +9,9 @@ from pika.exceptions import AMQPConnectionError
 
 class ConnectionManager(object):
     """
-    Manages connections to RabbitMQ. For teaching purposes is used the BlockingConnection strategy.
+    A connection refers to a network connection established between a client (producer or consumer) and the RabbitMQ message broker.
+    A connection serves as a communication link through which messages can be exchanged between the client application and the RabbitMQ server.
+    Connections are a fundamental concept in the Advanced Message Queuing Protocol (AMQP), which RabbitMQ implements.
     """
 
     _instance = None

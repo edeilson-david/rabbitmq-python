@@ -6,7 +6,8 @@ from rabbitmq.exchange import Exchange
 
 class Publisher(ABC):
     """
-    Publisher abstract base class to publish messages to RabbitMQ Exchange.
+    Publisher (or Producer) is the component or application responsible for creating and sending messages.
+    The producer publishes messages to exchanges in RabbitMQ.
     """
 
     @abstractmethod
